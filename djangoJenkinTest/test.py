@@ -13,4 +13,3 @@ class HomePageTests(SimpleTestCase):
         print("verify not exit about page")
         response = self.client.get('/about')
         self.assertEquals(response.status_code, 404)
-
